@@ -41,6 +41,8 @@ footer {
     margin: 0 5px;
 }
 
+
+/* Estilo da Página de Lançamento */
 .galeria {
     display: flex;
     justify-content: center;
@@ -86,6 +88,7 @@ button:hover {
 }
 
 
+/* Estilo da Página de Contato */
 /* Estilo do formulário */
 form input,
 form select,
