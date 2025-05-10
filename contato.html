@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta name="author" content="Snaider" />
-    <title>Contato - Ford</title>
+    <title>Site da UC HTML e CSS Matutino</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+    <header>
+        <a href="index.html"><img src="img/logo-ford-256.png" alt="Logo Ford" /></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="lancamento.html">Lançamento</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
     
+    <main>
+        <h2>Fale conosco</h2>
+
+        <form>
+            <label>Nome:</label>
+            <input type="text" placeholder="Digite seu nome completo" required />
+
+            <label>Email:</label>
+            <input type="email" placeholder="exemplo@email.com" required />
+
+            <label>Telefone:</label>
+            <input type="tel" placeholder="(00) 00000-0000" required />
+
+            <label>Assunto:</label>
+            <select required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option>Elogio</option>
+                <option>Dúvida</option>
+                <option>Reclamação</option>
+            </select>
+
+            <label>Mensagem:</label>
+            <textarea placeholder="Digite sua mensagem aqui..." required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    
+    <footer>
+        <div class="redes-sociais">
+            <a href="#"><img src="img/facebook-50.png" alt="Facebook" /></a>
+            <a href="#"><img src="img/instagram-logo-50.png" alt="Instagram" /></a>
+            </div>
+            <p>&copy; 2025 Ford Brasil. Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>

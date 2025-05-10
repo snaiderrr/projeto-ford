@@ -86,4 +86,41 @@ button:hover {
 }
 
 
+/* Estilo do formulário */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    margin: 5px 0 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Quando o campo estiver em foco */
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: 2px solid #003366;
+}
+
+/* Estilo do botão */
+form button {
+    background: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+/* Efeito hover no botão */
+form button:hover {
+    background: #0055a5;
+    transform: scale(1.05);
+}
+
 
