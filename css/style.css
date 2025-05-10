@@ -56,15 +56,34 @@ footer {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
 }
 
+
+/* Estilo da tabela */
 table {
     width: 60%;
     border-collapse: collapse;
-    margin: 20% auto;
+    margin: 40px auto;
 }
 
 th, td {
-    border: 1% solid #ccc;
-    padding: 12%;
+    border: 1px solid #ccc;
+    padding: 12px;
     text-align: center;
 }
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0055a5;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
 
