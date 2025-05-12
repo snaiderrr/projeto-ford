@@ -3,20 +3,26 @@ body {
 }
 
 header {
-    background-color: white;
-    color: white;
-    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
 }
 
 header img {
-    max-height: 80px;
+    max-height: 60px;
+}
+
+nav {
+    flex: 1;
+    text-align: center;
 }
 
 nav a {
     color: #0055a5;
-    margin: 0 10px;
-    text-decoration: solid;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 main {
@@ -45,8 +51,12 @@ footer {
     margin: 20px 0;
 }
 
+.cabeçalho-do-video {
+    background-color: black;
+}
+
 .galeria img {
-    width: 200px;
+    width: 280px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
@@ -57,6 +67,7 @@ footer {
 table {
     width: 60%;
     border-collapse: collapse;
+    border-spacing: 16px;
     margin: 40px auto;
 }
 
