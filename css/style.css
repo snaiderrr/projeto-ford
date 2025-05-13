@@ -6,7 +6,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 50px;
 }
 
 header img {
@@ -37,8 +37,12 @@ footer {
 }
 
 .redes-sociais img {
-    width: 24px;
+    width: 28px;
     margin: 0 5px;
+}
+
+.copy {
+    color: white
 }
 
 
@@ -98,7 +102,7 @@ button:hover {
 form input,
 form select,
 form textarea {
-    width: 100%;
+    width: 50%;
     margin: 5px 0 15px;
     padding: 10px;
     font-size: 14px;
@@ -107,10 +111,80 @@ form textarea {
     box-sizing: border-box;
 }
 
+.formulario-contato {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    max-width: 780px;
+    margin: 20px auto;
+    text-align: right;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.formulario-contato img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.formulario-contato .formulario-titulo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contato .formulario-titulo h2 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.formulario-contato .formulario-titulo form {
+    padding: 20px;
+}
+
+.formulario-contato .formulario-titulo form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario-contato .formulario-titulo form input,
+.formulario-contato .formulario-titulo form select,
+.formulario-contato .formulario-titulo form textarea {
+    /* Estilos aqui */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.formulario-contato .formulario-titulo form button {
+    background: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    width: auto;
+    margin-top: 10px;
+}
+
+.formulario-contato .formulario-titulo form button:hover {
+    background: #0055a5;
+    transform: scale(1.05);
+}
+
 /* Quando o campo estiver em foco */
-form input:focus,
-form textarea:focus,
-form select:focus {
+.formulario-contato .formulario-titulo form input:focus,
+.formulario-contato .formulario-titulo form textarea:focus,
+.formulario-contato .formulario-titulo form select:focus {
     outline: 2px solid #003366;
 }
 

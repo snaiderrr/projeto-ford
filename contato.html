@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="author" content="Snaider" />
-    <title>Site da UC HTML e CSS Matutino</title>
+    <title>Contato - Ford</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -17,32 +17,35 @@
     </header>
     
     <main>
-        <h2>Fale conosco</h2>
+        <h2>Sobre Você</h2>
+        <div class="formulario-contato">
         <img src="img/xls 2.2 diesel.jpg" alt="Imagem do Ford Diesel"/>
+        <div class="formulario-titulo">
 
         <form>
-            <label>Nome:</label>
-            <input type="text" placeholder="Digite seu nome completo" required />
+            <input type="text" placeholder="NOME *" required /><br>
 
-            <label>Email:</label>
-            <input type="email" placeholder="exemplo@email.com" required />
+            <input type="text" placeholder="SOBRENOME *" required /><br>
 
-            <label>Telefone:</label>
-            <input type="tel" placeholder="(00) 00000-0000" required />
+            <input type="email" placeholder="EMAIL *" required /><br>
 
-            <label>Assunto:</label>
-            <select required>
+            <input type="cpf" placeholder="CPF *" required /><br>
+
+            <input type="tel" placeholder="TELEFONE *" required /><br>
+
+            <select required><br>
                 <option value="" disabled selected>Selecione uma opção</option>
                 <option>Elogio</option>
                 <option>Dúvida</option>
                 <option>Reclamação</option>
-            </select>
-
-            <label>Mensagem:</label>
+            </select><br>
+            
             <textarea placeholder="Digite sua mensagem aqui..." required></textarea>
-
+            <br>
             <button type="submit">Enviar</button>
         </form>
+    </div>
+    </div>
     </main>
     
     <footer>
@@ -51,7 +54,9 @@
             <a href="#"><img src="img/instagram-logo-50.png" alt="Instagram" /></a>
             <a href="#"><img src="img/youtube-squared-50.png" alt="Youtube" /></a>
             </div>
-            <p>&copy; 2025 Ford Brasil. Todos os direitos reservados</p>
+            <div class="copy">
+                <p>&copy; 2025 Ford Brasil. Todos os direitos reservados</p>
+            </div>
     </footer>
 </body>
 </html>
