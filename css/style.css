@@ -1,16 +1,23 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 50px;
+    padding: 10px 20px 5px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
 }
 
 header img {
-    max-height: 60px;
+    max-height: 70px;
 }
 
 nav {
@@ -28,17 +35,34 @@ nav a {
 main {
     padding: 40px;
     text-align: center;
+    flex-grow: 1;
 }
 
 footer {
     background-color: #003366;
-    text-align: center;
-    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 10px 20px;
+    box-sizing: border-box;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+}
+
+.redes-sociais p {
+    color: white;
+    margin-right: 1px;
+    margin-bottom: 0;
 }
 
 .redes-sociais img {
-    width: 28px;
-    margin: 0 5px;
+    width: 32px;
+    margin: 0 2px;
+    margin-top: 5px;
+    vertical-align: middle;
 }
 
 .copy {
@@ -82,11 +106,12 @@ th, td {
 }
 
 button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #003366;
+    margin-top: 1px;
+    padding: 10px 50px;
+    background-color: #0055a5;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -124,7 +149,7 @@ form textarea {
 }
 
 .formulario-contato img {
-    max-width: 60%;
+    max-width: 80%;
     height: auto;
     border-radius: 8px;
 }
@@ -165,9 +190,9 @@ form textarea {
 }
 
 .formulario-contato .formulario-titulo form button {
-    background: #003366;
+    background: #0055a5;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 80px;
     border: none;
     cursor: pointer;
     transition: 0.3s;
