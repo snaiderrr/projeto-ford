@@ -1,5 +1,10 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -32,6 +37,15 @@ nav a {
     font-weight: bold;
 }
 
+.logo {
+    width: 10%;
+}
+
+.logo img {
+    width: 60%;
+    height: auto;
+}
+
 main {
     padding: 40px;
     text-align: center;
@@ -39,6 +53,7 @@ main {
 }
 
 footer {
+    margin-top: auto;
     background-color: #003366;
     display: flex;
     justify-content: space-between;
@@ -66,7 +81,8 @@ footer {
 }
 
 .copy {
-    color: white
+    color: white;
+    text-align: right;
 }
 
 
@@ -230,4 +246,67 @@ form button:hover {
     transform: scale(1.05);
 }
 
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+
+main {
+    flex-grow: 0;
+    padding: 40px 10px;
+    text-align: center;
+}        
+
+/* Header adaptado */
+
+.cabecalho {
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo, .menu {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.menu a {
+    display: block;
+    margin: 10px 0;
+}
+
+/* Footer adaptado */
+.rodape {
+    flex-direction: column;
+    text-align: center;
+}
+
+.redes-sociais, .copy {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Galeria */
+.galeria {
+    flex-direction: column;
+    align-items: center;
+}
+
+.galeria img {
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+/* Tabela com rolagem horizontal */
+table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+th, td {
+    font-size: 13px;
+    padding: 10px;
+}    
+    }
+}
 
