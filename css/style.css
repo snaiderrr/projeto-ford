@@ -38,18 +38,44 @@ nav a {
 }
 
 .logo {
-    width: 10%;
+    flex: 0 0 auto;
 }
 
 .logo img {
-    width: 60%;
+    max-height: 70px;
     height: auto;
+    width: auto;
 }
+
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.menu a {
+    color: #0055a5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 
 main {
     padding: 40px;
     text-align: center;
     flex-grow: 1;
+}
+
+main img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
 }
 
 footer {
@@ -60,6 +86,16 @@ footer {
     align-items: center;
     padding: 15px 20px 10px 20px;
     box-sizing: border-box;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    flex-wrap: wrap; /* Permite quebra no mobile */
 }
 
 .redes-sociais {
@@ -95,9 +131,29 @@ footer {
     margin: 20px 0;
 }
 
+/* Responsividade do vídeo */
 .cabeçalho-do-video {
-    background-color: black;
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
 }
+
+.cabeçalho-do-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Ícone 'info' fixo (desktop e mobile) */
+td img[alt^="Detalhe"] {
+    width: 20px !important;
+    height: auto;
+}
+
 
 .galeria img {
     width: 280px;
@@ -261,17 +317,23 @@ main {
 
 .cabecalho {
     flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
-.logo, .menu {
-    width: 100%;
-    margin-bottom: 10px;
+.menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .menu a {
     display: block;
-    margin: 10px 0;
+    margin: 8px 0;
+}
+
+.logo {
+    margin-bottom: 10px;
 }
 
 /* Footer adaptado */
@@ -306,7 +368,25 @@ table {
 th, td {
     font-size: 13px;
     padding: 10px;
-}    
+}
+
+.formulario-contato {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.formulario-contato img {
+    max-width: 80%;
+}
+
+.formulario-contato .formulario-titulo {
+    width: 100%;
+}
+
+.formulario-contato form button {
+    width: 100%;
+}
     }
 }
 
