@@ -1,13 +1,18 @@
 function comparar () {
-    let preco = 120000;
-    let aviso = document.getElementById("aviso");
+    let modelo = "XLS";
+    let resultado = document.getElementById("resultado");
 
-    // Verifica o valor do carro e mostra uma avaliação
-    if (preco >= 150000) {
-        aviso.innerText = "Carro muito caro.";
-    } else if (preco >= 130000) {
-        aviso.innerText = "Preço razoável.";
-    } else {
-        aviso.innerText = "Excelente oportunidade!";
+    switch (modelo) {
+        case "Storm":
+            resultado.innerText = "Modelo completo com todos os opcionais.";
+            break;
+        case "XLS":
+            resultado.innerText = "Modelo intermediário com bom custo-benefício.";
+            break;
+        case "XL":
+            resultado.innerText = "Modelo básico, ideal para cidade."; 
+            break;
+          default:
+            resultado.innerText = "Modelo não reconhecido.";     
     }
 }
