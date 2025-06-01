@@ -29,3 +29,16 @@ function avaliar(){
         aviso.innerText = "Excelente oportunidade!";
     }
 }
+
+function avaliar(){
+    let km = document.getElementById("km").value;
+    let msg = document.getElementById("msg");
+
+    if (km > 15) {
+        msg.innerText = "Carro econômico!";
+    } else if (km >= 10) {
+        msg.innerText = "Consumo razoável.";
+    } else {
+        msg.innerText = "Bebe muito!";
+    }
+}
