@@ -4,6 +4,24 @@ for (let i = 0; i < frutas.length; i++) {
     console.log("Fruta:", frutas[i]);
 }
 
+let carro = {
+    modelo: "Storm",
+    preco: 160000,
+    cor: "preto"
+};
+
+console.log(carro.modelo); //Storm
+console.log(carro.preco); // 160000
+console.log(carro.cor); // preto
+
+
+let carros = [
+    { modelo: "XL 2.0 Flex", preco: 120000, cor: "preto" },
+    { modelo: "XLS 2.2 Diesel", preco: 145000, cor: "preto" },
+    { modelo: "Storm 2.4 Turbo", preco: 160000, cor: "preto" }
+];
+
+
 function comparar () {
     let modelo = "XLS";
     let resultado = document.getElementById("resultado");
