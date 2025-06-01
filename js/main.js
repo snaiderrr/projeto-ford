@@ -15,7 +15,7 @@ console.log(carro.preco); // 160000
 console.log(carro.cor); // preto
 
 
-let carros = [
+let Carro = [
     { modelo: "XL 2.0 Flex", preco: 120000, cor: "preto" },
     { modelo: "XLS 2.2 Diesel", preco: 145000, cor: "preto" },
     { modelo: "Storm 2.4 Turbo", preco: 160000, cor: "preto" }
@@ -39,6 +39,12 @@ class carros {
         console.log("Preço: R$", this.preco);
     }
 }
+
+let carro1 = new carros("XL 2.0 Flex", 120000, "img/xl.jpg");
+let carro2 = new carros("XLS 2.2 Diesel", 145000, "img/xls.jpg");
+
+carro1.exibirInfo();
+carro2.exibirInfo();
 
 function comparar () {
     let modelo = "XLS";
