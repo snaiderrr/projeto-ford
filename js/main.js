@@ -40,11 +40,21 @@ class carros {
     }
 }
 
-let carro1 = new carros("XL 2.0 Flex", 120000, "img/xl.jpg");
-let carro2 = new carros("XLS 2.2 Diesel", 145000, "img/xls.jpg");
+let carro1 = new carros("XL 2.0 Flex", 120000, "img/XL Cabine.jpg");
+let carro2 = new carros("XLS 2.2 Diesel", 145000, "img/xls 2.2 diesel.jpg");
 
 carro1.exibirInfo();
 carro2.exibirInfo();
+
+let Carros = [
+    new carros("XL 2.0 Flex", 120000, "img/XL Cabine.jpg"),
+    new carros("XLS 2.2 Diesel", 145000, "img/xls 2.2 diesel.jpg"),
+    new carros("Storm 2.4 Turbo", 160000, "img/storm.jpg")
+];
+
+for (let i = 0; i < carros.length; i++) {
+    Carros[i].exibirInfo();
+}
 
 function comparar () {
     let modelo = "XLS";
