@@ -27,6 +27,19 @@ for (let i= 0; i < carros.length; i++) {
     console.log("Preço:", carros[i].cor);
 }
 
+class carros {
+    constructor(modelo, preco, imagem) {
+        this.modelo = modelo;
+        this.preco = preco;
+        this.imagem = imagem;
+    }
+
+    exibirInfo() {
+        console.log("Modelo:", this.modelo);
+        console.log("Preço: R$", this.preco);
+    }
+}
+
 function comparar () {
     let modelo = "XLS";
     let resultado = document.getElementById("resultado");
