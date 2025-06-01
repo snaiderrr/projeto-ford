@@ -16,3 +16,16 @@ function comparar () {
             resultado.innerText = "Modelo não reconhecido.";     
     }
 }
+
+function avaliar(){
+    let preco = 145000;
+    let aviso = document.getElementById("aviso");
+
+    if (preco >= 150000) {
+        aviso.innerText = "Carro muito caro.";
+    } else if (preco >= 130000) {
+        aviso.innerText = "Preço razoável.";
+    } else {
+        aviso.innerText = "Excelente oportunidade!";
+    }
+}
