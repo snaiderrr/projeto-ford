@@ -21,6 +21,11 @@ let carros = [
     { modelo: "Storm 2.4 Turbo", preco: 160000, cor: "preto" }
 ];
 
+for (let i= 0; i < carros.length; i++) {
+    console.log("Modelo:", carros[i].modelo);
+    console.log("Preço:", carros[i].preco);
+    console.log("Preço:", carros[i].cor);
+}
 
 function comparar () {
     let modelo = "XLS";
