@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta name="author" content="Snaider" />
     <title>Lançamento - Ford</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
     <header class="cabecalho">
@@ -17,56 +17,50 @@
             <a href="contato.html">Contato</a>
         </nav>
     </header>
- 
-    </div>
-    <main>       
+
+    <main>
         <div class="carrossel">
-        
-        <div class="slides"> 
-            <!--Radio Buttons-->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <!--Radio Buttons-->
+            <div class="slides">
+                <!--Radio Buttons-->
+                <input type="radio" name="radio-btn" id="radio1" checked />
+                <input type="radio" name="radio-btn" id="radio2" />
+                <!--Fim Radio Buttons-->
 
+                <!--Slide images-->
+                <div class="slide first">
+                    <img src="img/imagem_1.jpg" alt="Imagem 1" />
+                </div>
+                <div class="slide">
+                    <img src="img/imagem_2.jpg" alt="Imagem 2" />
+                </div>
+                <!--Fim Slide images-->
 
-            <!--Slide images-->
-            <div class="slide first">
-                <img src="img/imagem_1.jpg" alt="Imagem 1" />
-            </div>
-            <div class="slide">
-                <img src="img/imagem_2.jpg" alt="Imagem 1" />
-            </div>
-            <!--Fim Carrossel images-->
-
-            <!--Navigation auto-->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
+                <!--Navigation auto-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                </div>
             </div>
 
-        </div>
-
-
-        <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+            </div>
         </div>
     </main>
-    
+
     <footer class="rodape">
         <div class="redes-sociais">
             <p>Redes Sociais:</p>
             <a href="#"><img src="img/facebook-50.png" alt="Facebook" /></a>
             <a href="#"><img src="img/instagram-logo-50.png" alt="Instagram" /></a>
             <a href="#"><img src="img/youtube-squared-50.png" alt="Youtube" /></a>
-            </div>
-            <div class="copy">
-                <p>&copy; 2025 Ford Brasil. Todos os direitos reservados</p>
-            </div>
+        </div>
+        <div class="copy">
+            <p>&copy; 2025 Ford Brasil. Todos os direitos reservados</p>
+        </div>
     </footer>
 
-
-    <script src="carousel.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 </html>
