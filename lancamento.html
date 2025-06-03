@@ -78,14 +78,71 @@
                     </td>
                   </tr>
             </table>
-            <button onclick="comparar()">Comparar modelos</button>
-            <p id="resultado"></p>
-            <button onclick="avaliar()">Avaliar Preço</button>
-            <p id="aviso"></p>
-            <input type="number" id="km" placeholder="Km por litro">
-            <button onclick="verificar()">Calcular</button>
-            <p id="msg"></p>
+         <button onclick="ShowCompare()">Comparar modelos</button>
+        <p id="resultado"></p>
+
+            
     </main>
+
+       <div id="compare" style="display: none; position: fixed; top: 10%; left: 10%; width: 80%; background: white; padding: 20px; border: 1px solid #ccc;">
+        <table border="1">
+            <tr>
+                <td><img id="img1" src="" width="150"></td>
+                <td><img id="img2" src="" width="150"></td>
+            </tr>
+            <tr>
+                <td id="model1"></td>
+                <td id="model2"></td>
+            </tr>
+            <tr>
+                <th>Altura do compartimento (mm)</th>
+                <td id="heightCargo1"></td>
+                <td id="heightCargo2"></td>
+            </tr>
+            <tr>
+                <th>Altura do veículo (mm)</th>
+                <td id="heightVehicle1"></td>
+                <td id="heightVehicle2"></td>
+            </tr>
+            <tr>
+                <th>Altura livre do solo (mm)</th>
+                <td id="groundClearance1"></td>
+                <td id="groundClearance2"></td>
+            </tr>
+            <tr>
+                <th>Capacidade de carga (kg)</th>
+                <td id="cargoCapacity1"></td>
+                <td id="cargoCapacity2"></td>
+            </tr>
+            <tr>
+                <th>Motor</th>
+                <td id="engine1"></td>
+                <td id="engine2"></td>
+            </tr>
+            <tr>
+                <th>Potência (cv)</th>
+                <td id="power1"></td>
+                <td id="power2"></td>
+            </tr>
+            <tr>
+                <th>Volume de carga (L)</th>
+                <td id="cargoVolume1"></td>
+                <td id="cargoVolume2"></td>
+            </tr>
+            <tr>
+                <th>Rodas</th>
+                <td id="wheels1"></td>
+                <td id="wheels2"></td>
+            </tr>
+            <tr>
+                <th>Preço</th>
+                <td id="price1"></td>
+                <td id="price2"></td>
+            </tr>
+        </table>
+        <br>
+        <button onclick="HideCompare()">Fechar</button>
+    </div>
 
     <footer>
         <div class="redes-sociais">
@@ -99,6 +156,6 @@
         </div>
     </footer>
 
-     <script src="main.js"></script>
+     <script src="js/compare.js"></script>
 </body>
 </html>
