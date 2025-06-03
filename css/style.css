@@ -63,7 +63,7 @@ nav a {
 }
 
 main {
-    padding: 40px;
+    padding: 80px;
     text-align: center;
     flex-grow: 1;
 }
@@ -294,6 +294,7 @@ form button:hover {
 
 /* Carrossel */
 .carrossel {
+    position: relative;
     margin: 0 auto;
     width: 800px;
     height: 400px;
@@ -301,7 +302,7 @@ form button:hover {
 }
 
 .slides {
-    width: 200%;
+    width: 300%;
     height: 400px;
     display: flex;
 }
@@ -311,7 +312,7 @@ form button:hover {
 }
 
 .slide {
-    width: 50%;
+    width: 33.33%;
     position: relative;
     transition: 2s;
 }
@@ -349,7 +350,11 @@ form button:hover {
 }
 
 #radio2:checked ~ .first {
-    margin-left: -50%;
+    margin-left: -33.33%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -66.66%;
 }
 
 .navigation-auto {
