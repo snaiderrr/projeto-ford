@@ -23,8 +23,7 @@
         <h2>Lançamento do novo Ford</h2>
         <div class="cabeçalho-do-video">
             <iframe
-                width="1280"
-                height="576"
+
                 src="https://www.youtube.com/embed/vQsryuNmsL0"
                 frameborder="0"
                 allowfullscreen>
@@ -52,7 +51,7 @@
                  <!-- Segunda linha: descrição, checkbox e ícone -->
                   <tr>
                     <td>
-                        <input type="checkbox"><br>
+                        <input type="checkbox" onchange="SetCarToCompare(this, 1)"><br>
                         <strong>XL Cabine</strong><br>
                         Versão básica com ótimo custo-benefício para trabalho pesado.<br>
                         R$ 150.000<br>
@@ -60,7 +59,7 @@
                     </td>
 
                     <td>
-                        <input type="checkbox"><br>
+                        <input type="checkbox" onchange="SetCarToCompare(this, 2)"><br>
                         <strong>XLS 2.2 Diesel</strong><br>
                         Equilíbrio entre desempenho e economia com motor diesel confiável.<br>
                         R$ 135.000<br>
@@ -69,7 +68,7 @@
                     </td>
 
                     <td>
-                        <input type="checkbox"><br>
+                        <input type="checkbox" onchange="SetCarToCompare(this, 3)"><br>
                         <strong>Storm</strong><br>
                         Visual robusto e recursos off-road para quem busca aventura.<br>
                         R$ 120.000<br>
@@ -78,14 +77,59 @@
                     </td>
                   </tr>
             </table>
-            <button onclick="comparar()">Comparar modelos</button>
-            <p id="resultado"></p>
-            <button onclick="avaliar()">Avaliar Preço</button>
-            <p id="aviso"></p>
-            <input type="number" id="km" placeholder="Km por litro">
-            <button onclick="verificar()">Calcular</button>
-            <p id="msg"></p>
+         <button onclick="ShowCompare()">Comparar modelos</button>
+        <p id="resultado"></p>
+
+            
     </main>
+
+       <div id="compare" class="comparison-window" style="display: none;">
+    <div class="comparison-content">
+        <div class="column features-column">
+            <div class="placeholder-image"></div> <div class="feature-label">Modelo</div>
+            <div class="feature-label">Altura da caçamba (mm)</div>
+            <div class="feature-label">Altura do veículo (mm)</div>
+            <div class="feature-label">Altura livre do solo (mm)</div>
+            <div class="feature-label">Capacidade de carga (Kg)</div>
+            <div class="feature-label">Motor</div>
+            <div class="feature-label">Potência (cv)</div>
+            <div class="feature-label">Volume da caçamba (L)</div>
+            <div class="feature-label">Roda</div>
+            <div class="feature-label price-label">Preço</div>
+        </div>
+
+        <div class="column car-column">
+            <img id="img1" src="" alt="Carro 1" class="car-image">
+            <div class="model-name" id="model1"></div>
+            <div class="feature-value" id="heightCargo1"></div>
+            <div class="feature-value" id="heightVehicle1"></div>
+            <div class="feature-value" id="groundClearance1"></div>
+            <div class="feature-value" id="cargoCapacity1"></div>
+            <div class="feature-value" id="engine1"></div>
+            <div class="feature-value" id="power1"></div>
+            <div class="feature-value" id="cargoVolume1"></div>
+            <div class="feature-value" id="wheels1"></div>
+            <div class="feature-value price-value" id="price1"></div>
+        </div>
+
+        <div class="column car-column">
+            <img id="img2" src="" alt="Carro 2" class="car-image">
+            <div class="model-name" id="model2"></div>
+            <div class="feature-value" id="heightCargo2"></div>
+            <div class="feature-value" id="heightVehicle2"></div>
+            <div class="feature-value" id="groundClearance2"></div>
+            <div class="feature-value" id="cargoCapacity2"></div>
+            <div class="feature-value" id="engine2"></div>
+            <div class="feature-value" id="power2"></div>
+            <div class="feature-value" id="cargoVolume2"></div>
+            <div class="feature-value" id="wheels2"></div>
+            <div class="feature-value price-value" id="price2"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <button onclick="HideCompare()">Fechar</button>
+    </div>
+</div>
 
     <footer>
         <div class="redes-sociais">
@@ -99,6 +143,6 @@
         </div>
     </footer>
 
-     <script src="main.js"></script>
+     <script src="js/compare.js"></script>
 </body>
 </html>
