@@ -388,73 +388,68 @@ form button:hover {
 /* --- Estilos para a Janela de Comparação --- */
 
 .comparison-window {
-    background-color: #ffffff; /* Fundo branco para a janela */
-    border: 1px solid #e0e0e0; /* Borda clara */
-    border-radius: 8px; /* Cantos arredondados */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra suave */
-    width: 90%; /* Ajuste a largura conforme necessário */
-    max-width: 960px; /* Largura máxima para a janela */
-    position: fixed; /* Fixa na tela */
-    top: 50%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta a posição exata para o centro */
-    z-index: 1000; /* Garante que fique acima de outros elementos */
-    overflow: hidden; /* Garante que o conteúdo não vaze */
+    background-color: #ffffff; 
+    border: 1px solid #e0e0e0;
+    border-radius: 8px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+    width: 90%; 
+    max-width: 960px; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1000; 
+    overflow: hidden; 
     display: flex;
     flex-direction: column;
 }
 
 .comparison-content {
     display: flex;
-    padding: 20px; /* Espaçamento interno da área de conteúdo */
+    padding: 20px; 
     flex-grow: 1;
 }
 
 .column {
     display: flex;
     flex-direction: column;
-    /* Remover padding lateral inicial, será ajustado pelas células */
     padding: 0;
-    /* Remover borda entre colunas aqui, faremos com as células para maior controle */
     border-right: none;
 }
 
 .features-column {
-    flex: 0 0 250px; /* Largura fixa para a coluna de características */
-    text-align: left; /* Alinha os rótulos à esquerda */
-    color: #444; /* Cor para os rótulos */
-    font-weight: normal; /* Labels normais */
-    /* Padding lateral para os rótulos */
+    flex: 0 0 250px; 
+    text-align: left; 
+    color: #444; 
+    font-weight: normal; 
     padding-left: 20px;
-    padding-right: 10px; /* Pequeno espaçamento à direita do rótulo */
+    padding-right: 10px; 
 }
 
 .car-column {
-    flex: 1; /* Faz com que as colunas dos carros ocupem o espaço restante igualmente */
-    text-align: center; /* Alinha o conteúdo dos carros ao centro */
-    /* Adicionar borda vertical sutil entre as colunas dos carros */
-    border-left: 1px solid #e0e0e0; /* Borda sutil à esquerda */
-    padding: 0 10px; /* Espaçamento lateral para os valores dos carros */
+    flex: 1; 
+    text-align: center; 
+    border-left: 1px solid #e0e0e0; 
+    padding: 0 10px; 
 }
 
-.car-column:first-of-type { /* Coluna do primeiro carro (que tem a borda à esquerda) */
-    /* Certificar-se de que não haja borda dupla se a coluna features tiver uma */
+.car-column:first-of-type {
     border-left: 1px solid #e0e0e0;
 }
 
 
 .placeholder-image {
-    height: 120px; /* Mesma altura da imagem do carro para alinhamento */
-    margin-bottom: 20px; /* Espaçamento abaixo do placeholder, igual ao da imagem */
-    background-color: transparent; /* Certifica que não tem fundo */
+    height: 120px; 
+    margin-bottom: 20px; 
+    background-color: transparent; 
 }
 
 .car-image {
     width: 100%;
-    max-width: 180px; /* Largura máxima para a imagem do carro */
-    height: 120px; /* Altura fixa para as imagens */
-    object-fit: contain; /* Garante que a imagem se encaixe sem cortar */
-    margin: 0 auto 20px auto; /* Centraliza e adiciona margem inferior */
+    max-width: 180px; 
+    height: 120px; 
+    object-fit: contain; 
+    margin: 0 auto 20px auto; 
 }
 
 .model-name {
@@ -462,40 +457,38 @@ form button:hover {
     margin-bottom: 15px;
     color: #333;
     font-size: 1.05em;
-    padding: 0 5px; /* Pequeno padding para modelos longos */
+    padding: 0 5px; 
 }
 
 .feature-label,
 .feature-value {
-    padding: 12px 10px; /* Padding interno para as células */
-    border-bottom: 1px solid #f0f0f0; /* Borda inferior suave para todas as linhas */
-    white-space: nowrap; /* Evita que o texto quebre */
-    overflow: hidden; /* Esconde o texto que excede */
-    text-overflow: ellipsis; /* Adiciona reticências se o texto for cortado */
-    display: flex; /* Usar flex para alinhar conteúdo dentro da célula */
-    align-items: center; /* Centraliza verticalmente o texto */
+    padding: 12px 10px; 
+    border-bottom: 1px solid #f0f0f0; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: flex; 
+    align-items: center; 
 }
 
-/* Alinhamento específico para a coluna de rótulos */
+/* Alinhamento para a coluna de rótulos */
 .features-column .feature-label {
-    justify-content: flex-start; /* Alinha o texto à esquerda */
-    font-weight: normal; /* Labels normais */
+    justify-content: flex-start; 
+    font-weight: normal; 
     color: #444;
 }
 
 /* Alinhamento para os valores dos carros */
 .car-column .feature-value {
-    justify-content: center; /* Centraliza os valores */
-    color: #333; /* Cor dos valores */
+    justify-content: center; 
+    color: #333; 
 }
 
-/* Estilo para linhas alternadas (zebra striping) */
 .comparison-content .column:nth-child(even) .feature-value,
 .comparison-content .features-column .feature-label:nth-child(even) {
-    background-color: #f9f9f9; /* Fundo cinza claro para linhas pares */
+    background-color: #f9f9f9; /* Fundo cinza claro para linhas */
 }
 
-/* Removendo a borda inferior da última linha em cada coluna */
 .feature-label:last-of-type,
 .feature-value:last-of-type {
     border-bottom: none;
@@ -503,12 +496,12 @@ form button:hover {
 
 .price-label,
 .price-value {
-    font-weight: bolder; /* Preço mais bold */
-    font-size: 1.4em; /* Preço um pouco maior */
-    color: #007bff; /* Azul vibrante para o preço (como na imagem original) */
-    padding-top: 15px; /* Mais espaço acima do preço */
-    border-top: 1px solid #eee; /* Borda acima do preço */
-    margin-top: 5px; /* Espaçamento entre a feature anterior e o preço */
+    font-weight: bolder; 
+    font-size: 1.4em; 
+    color: #007bff; 
+    padding-top: 15px; 
+    border-top: 1px solid #eee; 
+    margin-top: 5px; 
 }
 
 /* Garantir que o preço não tenha fundo alternado */
@@ -521,11 +514,11 @@ form button:hover {
     padding: 15px;
     text-align: center;
     border-top: 1px solid #eee;
-    background-color: #fcfcfc; /* Fundo levemente diferente para o rodapé */
+    background-color: #fcfcfc; 
 }
 
 .comparison-window .close-button {
-    background-color: #007bff; /* Azul vibrante */
+    background-color: #007bff; 
     color: white;
     border: none;
     padding: 10px 25px;
@@ -536,10 +529,9 @@ form button:hover {
 }
 
 .comparison-window .close-button:hover {
-    background-color: #0056b3; /* Azul mais escuro no hover */
+    background-color: #0056b3; 
 }
 
-/* Z-index para o botão de comparação e p#resultado para que não fique por baixo */
 button[onclick="ShowCompare()"], p#resultado {
     position: relative;
     z-index: 1;
