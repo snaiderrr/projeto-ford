@@ -45,7 +45,23 @@
             
             <textarea placeholder="Digite sua mensagem aqui..." required></textarea>
             <br>
-            <button type="submit">Enviar</button>
+            
+            <p>
+      Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você.
+  A qualquer momento, será possível editar ou remover tais dados.
+            </p>
+            
+            <label>
+                <input type="checkbox" id="checkbox1">
+                Sim. Li e concordo com os <a href="https://www.ford.com.br/politica-de-privacidade/" target="_blank">Termos e Condições</a>.
+            </label>
+
+            <label>
+                <input type="checkbox" id="checkbox2">
+                Sim. Também quero receber descontos e novidades.
+            </label>
+
+            <button type="enviar" disabled>Enviar</button>
         </form>
     </div>
     </div>
@@ -63,6 +79,6 @@
             </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>
