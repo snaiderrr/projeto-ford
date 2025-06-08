@@ -1,4 +1,4 @@
-const checkbox1 = document.getElementById("checkbox1");
+const checkbox1 = document.getElementById("aceite");
 const botao = document.getElementById("enviar");
 
 checkbox1.addEventListener("change", () => {
