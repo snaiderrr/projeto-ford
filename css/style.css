@@ -306,7 +306,7 @@ form button:hover {
 
 .consentimento label {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 8px;
     margin-top: 8px;
     font-weight: normal;
