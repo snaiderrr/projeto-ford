@@ -209,7 +209,6 @@ form textarea {
     gap: 20px;
     max-width: 780px;
     margin: 20px auto;
-    text-align: right;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -234,6 +233,7 @@ form textarea {
 
 .formulario-contato .formulario-titulo form {
     padding: 20px;
+    text-align: left;
 }
 
 .formulario-contato .formulario-titulo form label {
@@ -294,7 +294,6 @@ form button:hover {
 
 /* Bloco de consentimento */
 .consentimento {
-    width: 370px;
     border: 1px solid #ccc;
     background-color: #f5f5f5;
     padding: 16px;
@@ -303,17 +302,6 @@ form button:hover {
     font-size: 14px;
     color: #333;
     text-align: left;
-}
-
-.consentimento label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-    font-weight: normal;
-    color: #333;
-    line-height: 1.5;
-    font-size: 14px;
 }
 
 .consentimento p {
@@ -326,11 +314,29 @@ form button:hover {
     text-decoration: underline;
 }
 
-.consentimento input[type="checkbox"] {
-    transform: scale(1.1);
-    cursor: pointer;
+/* Estilo específico para checkboxes */
+.checkbox-label {
+    display: flex !important;
+    align-items: flex-start !important;
+    margin-bottom: 10px !important;
+    font-weight: normal !important;
+    color: #333 !important;
+    line-height: 1.5 !important;
+    font-size: 14px !important;
+    gap: 8px !important;
 }
 
+.checkbox-label input[type="checkbox"] {
+    margin: 0 !important;
+    margin-top: 2px !important;
+    flex-shrink: 0 !important;
+    cursor: pointer !important;
+}
+
+.checkbox-label span {
+    flex: 1;
+    cursor: pointer;
+}
 
 #enviar {
     padding: 10px 20px;
@@ -339,8 +345,9 @@ form button:hover {
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3 ease;
+    transition: background-color 0.3s ease;
     width: 100%;
+    margin-top: 15px;
 }
 
 #enviar:disabled {
@@ -348,8 +355,6 @@ form button:hover {
     color: #666;
     cursor: not-allowed;
 }
-
-
 
 /* Carrossel */
 .carrossel {
@@ -496,7 +501,6 @@ form button:hover {
     border-left: 1px solid #e0e0e0;
 }
 
-
 .placeholder-image {
     height: 120px; 
     margin-bottom: 20px; 
@@ -568,7 +572,6 @@ form button:hover {
     background-color: transparent !important;
 }
 
-
 .footer {
     padding: 15px;
     text-align: center;
@@ -595,7 +598,6 @@ button[onclick="ShowCompare()"], p#resultado {
     position: relative;
     z-index: 1;
 }
-
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -679,3 +681,4 @@ button[onclick="ShowCompare()"], p#resultado {
         width: 100%;
     }
 }
+
